@@ -38,7 +38,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private Product getProductFromRemote(Long productId) {
-        //TODD 远程调用商品服务
+        //TODO 远程调用商品服务
         //1 获取商品服务所在的所有机器IP+port
         List<ServiceInstance> instances = discoveryClient.getInstances("service-product");
 
